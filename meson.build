@@ -16,5 +16,6 @@ executable(
   'cpp-cuda',
   cuda_sources + cpp_sources,
   include_directories: include_directories('include'),
+  dependencies: [cuda_dependency],
   cuda_args: cuda_args
 )
