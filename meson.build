@@ -6,7 +6,7 @@ cuda_args = [
   '-Wno-deprecated-gpu-targets',
 ]
 cuda_dependency = dependency('cuda', required: true)
-cuda_sources = ['src/test-cuda.cu',]
+cuda_sources = ['src/cuda.cu',]
 
 # Cpp specifics
 cpp_sources = ['src/main.cpp',]
