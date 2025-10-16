@@ -13,6 +13,6 @@ Builds C++ projects that include CUDA code using the Meson build system.
 ## Usage
 ### Linux
 - Building: ```./scripts/build.sh```
-- Running: ```./scripts/run.sh``` (Will automatically build if needed)
+- Running: ```./scripts/run.sh``` (Will automatically build if the file or directory do not exist.)
 ### Windows
 Untested
