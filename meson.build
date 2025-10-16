@@ -1,4 +1,4 @@
-project('cpp-cuda', ['cpp, 'cuda'], default_options: ['cpp_std=c++23'])
+project('cpp-cuda', ['cpp', 'cuda'], default_options: ['cpp_std=c++23'])
 
 # Cuda specifics
 cuda_args = [
