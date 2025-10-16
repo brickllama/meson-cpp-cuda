@@ -9,7 +9,7 @@ cuda_args = [
 ]
 
 # Tell meson that cuda is required.
-cuda_dependency = dependency('cuda', required: true)
+cuda_dep = dependency('cuda', required: true)
 
 # List your cuda files here.
 cuda_sources = [
@@ -26,6 +26,6 @@ executable(
   'cpp-cuda',
   cuda_sources + cpp_sources,
   include_directories: include_directories('include'),
-  dependencies: [cuda_dependency],
+  dependencies: [cuda_dep],
   cuda_args: cuda_args,
 )
