@@ -1,5 +1,6 @@
 #!/bin/bash
-root_dir="$(dirname "$(pwd)")"
+script_dir="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+root_dir="$(dirname "${script_dir}")"
 
 # Go to the projects root directory
 cd "${root_dir}" || exit
